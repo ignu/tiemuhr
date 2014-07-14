@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C019749FCC007BA2E9 /* AppDelegate.swift */; };
+		F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */; };
+		F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C519749FCC007BA2E9 /* ViewController.swift */; };
+		F6C500C919749FCD007BA2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C500C719749FCD007BA2E9 /* Main.storyboard */; };
+		F6C500CB19749FCD007BA2E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C500CA19749FCD007BA2E9 /* Images.xcassets */; };
+		F6C500D719749FCD007BA2E9 /* tiemuhrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500D619749FCD007BA2E9 /* tiemuhrTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6C500D119749FCD007BA2E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C500B319749FCC007BA2E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C500BA19749FCC007BA2E9;
+			remoteInfo = tiemuhr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6C500BB19749FCC007BA2E9 /* tiemuhr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiemuhr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C500BF19749FCC007BA2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C500C019749FCC007BA2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6C500C319749FCC007BA2E9 /* tiemuhr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tiemuhr.xcdatamodel; sourceTree = "<group>"; };
+		F6C500C519749FCC007BA2E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6C500C819749FCD007BA2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6C500CA19749FCD007BA2E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6C500D019749FCD007BA2E9 /* tiemuhrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tiemuhrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C500D519749FCD007BA2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C500D619749FCD007BA2E9 /* tiemuhrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tiemuhrTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6C500B819749FCC007BA2E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C500CD19749FCD007BA2E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6C500B219749FCC007BA2E9 = {
+			isa = PBXGroup;
+			children = (
+				F6C500BD19749FCC007BA2E9 /* tiemuhr */,
+				F6C500D319749FCD007BA2E9 /* tiemuhrTests */,
+				F6C500BC19749FCC007BA2E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6C500BC19749FCC007BA2E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6C500BB19749FCC007BA2E9 /* tiemuhr.app */,
+				F6C500D019749FCD007BA2E9 /* tiemuhrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C500BD19749FCC007BA2E9 /* tiemuhr */ = {
+			isa = PBXGroup;
+			children = (
+				F6C500C019749FCC007BA2E9 /* AppDelegate.swift */,
+				F6C500C519749FCC007BA2E9 /* ViewController.swift */,
+				F6C500C719749FCD007BA2E9 /* Main.storyboard */,
+				F6C500CA19749FCD007BA2E9 /* Images.xcassets */,
+				F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */,
+				F6C500BE19749FCC007BA2E9 /* Supporting Files */,
+			);
+			path = tiemuhr;
+			sourceTree = "<group>";
+		};
+		F6C500BE19749FCC007BA2E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C500BF19749FCC007BA2E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C500D319749FCD007BA2E9 /* tiemuhrTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6C500D619749FCD007BA2E9 /* tiemuhrTests.swift */,
+				F6C500D419749FCD007BA2E9 /* Supporting Files */,
+			);
+			path = tiemuhrTests;
+			sourceTree = "<group>";
+		};
+		F6C500D419749FCD007BA2E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C500D519749FCD007BA2E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6C500BA19749FCC007BA2E9 /* tiemuhr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C500DA19749FCD007BA2E9 /* Build configuration list for PBXNativeTarget "tiemuhr" */;
+			buildPhases = (
+				F6C500B719749FCC007BA2E9 /* Sources */,
+				F6C500B819749FCC007BA2E9 /* Frameworks */,
+				F6C500B919749FCC007BA2E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tiemuhr;
+			productName = tiemuhr;
+			productReference = F6C500BB19749FCC007BA2E9 /* tiemuhr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6C500CF19749FCD007BA2E9 /* tiemuhrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C500DD19749FCD007BA2E9 /* Build configuration list for PBXNativeTarget "tiemuhrTests" */;
+			buildPhases = (
+				F6C500CC19749FCD007BA2E9 /* Sources */,
+				F6C500CD19749FCD007BA2E9 /* Frameworks */,
+				F6C500CE19749FCD007BA2E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6C500D219749FCD007BA2E9 /* PBXTargetDependency */,
+			);
+			name = tiemuhrTests;
+			productName = tiemuhrTests;
+			productReference = F6C500D019749FCD007BA2E9 /* tiemuhrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6C500B319749FCC007BA2E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Len Smith";
+				TargetAttributes = {
+					F6C500BA19749FCC007BA2E9 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F6C500CF19749FCD007BA2E9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F6C500BA19749FCC007BA2E9;
+					};
+				};
+			};
+			buildConfigurationList = F6C500B619749FCC007BA2E9 /* Build configuration list for PBXProject "tiemuhr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6C500B219749FCC007BA2E9;
+			productRefGroup = F6C500BC19749FCC007BA2E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6C500BA19749FCC007BA2E9 /* tiemuhr */,
+				F6C500CF19749FCD007BA2E9 /* tiemuhrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6C500B919749FCC007BA2E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C500C919749FCD007BA2E9 /* Main.storyboard in Resources */,
+				F6C500CB19749FCD007BA2E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C500CE19749FCD007BA2E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6C500B719749FCC007BA2E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */,
+				F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */,
+				F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C500CC19749FCD007BA2E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C500D719749FCD007BA2E9 /* tiemuhrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6C500D219749FCD007BA2E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C500BA19749FCC007BA2E9 /* tiemuhr */;
+			targetProxy = F6C500D119749FCD007BA2E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6C500C719749FCD007BA2E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C500C819749FCD007BA2E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6C500D819749FCD007BA2E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C500D919749FCD007BA2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6C500DB19749FCD007BA2E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = tiemuhr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6C500DC19749FCD007BA2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = tiemuhr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6C500DE19749FCD007BA2E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tiemuhr.app/tiemuhr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tiemuhrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F6C500DF19749FCD007BA2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tiemuhr.app/tiemuhr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tiemuhrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6C500B619749FCC007BA2E9 /* Build configuration list for PBXProject "tiemuhr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C500D819749FCD007BA2E9 /* Debug */,
+				F6C500D919749FCD007BA2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C500DA19749FCD007BA2E9 /* Build configuration list for PBXNativeTarget "tiemuhr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C500DB19749FCD007BA2E9 /* Debug */,
+				F6C500DC19749FCD007BA2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C500DD19749FCD007BA2E9 /* Build configuration list for PBXNativeTarget "tiemuhrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C500DE19749FCD007BA2E9 /* Debug */,
+				F6C500DF19749FCD007BA2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6C500C319749FCC007BA2E9 /* tiemuhr.xcdatamodel */,
+			);
+			currentVersion = F6C500C319749FCC007BA2E9 /* tiemuhr.xcdatamodel */;
+			path = tiemuhr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6C500B319749FCC007BA2E9 /* Project object */;
+}
