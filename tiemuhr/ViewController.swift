@@ -2,8 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var counterLabel: UILabel
     
+    @IBOutlet var counterLabel: UILabel
     var currentCounter = -1
     
     override func viewDidLoad() {

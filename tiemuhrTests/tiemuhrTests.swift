@@ -82,9 +82,8 @@ class tiemuhrTests: XCTestCase {
         var clock =  MockClock()
         var timer = IGTimer(clock: clock)
         clock.nextTime(9)
-        XCTAssertEqual(timer.rounds.count, 0)
         timer.increment()
         XCTAssertEqual(timer.rounds.count, 1)
-        XCTAssertEqual((timer.rounds[1] as IGRound).startTime, 9)
+        XCTAssertEqual((timer.rounds[0] as IGRound).startTime, 9)
     }
 }
