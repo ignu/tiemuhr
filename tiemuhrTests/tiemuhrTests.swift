@@ -30,20 +30,34 @@ class IGClock: IGClockProtocol {
 }
 
 class MockClock: IGClockProtocol {
+    var stubbedTime:Int
+
+    func nextTime(timeToStub: Int) {
+        stubbedTime = timeToStub
+    }
+
+    init() {
+        stubbedTime = 0
+    }
+
     func getTimestamp() -> Int {
-        return 0;
+        return stubbedTime
     }
 }
 
 class IGTimer {
     var rounds: NSMutableArray
+    var roundNumber: Int
+    var clock: IGClockProtocol
 
     init(clock:IGClockProtocol) {
         rounds = NSMutableArray()
+        self.clock = clock
+        roundNumber = 0
     }
 
     func increment() -> Int {
-        var round = IGRound(roundNumber: 0, roundStartTime: 0)
+        var round = IGRound(roundNumber: 0, roundStartTime: clock.getTimestamp())
         rounds.addObject(round)
         return 0
     }
@@ -59,7 +73,7 @@ class tiemuhrTests: XCTestCase {
     }
 
     func testHasAnArrayOfRounds() {
-        var clock =  MockClock()
+        var clock =  MockClock()        
         var timer = IGTimer(clock: clock)
         XCTAssertEqual(timer.rounds.count, 0)
     }
@@ -67,8 +81,10 @@ class tiemuhrTests: XCTestCase {
     func testCanIncrementRounds() {
         var clock =  MockClock()
         var timer = IGTimer(clock: clock)
+        clock.nextTime(9)
         XCTAssertEqual(timer.rounds.count, 0)
         timer.increment()
         XCTAssertEqual(timer.rounds.count, 1)
+        XCTAssertEqual((timer.rounds[1] as IGRound).startTime, 9)
     }
 }
