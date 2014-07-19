@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F62540DE1979EF0F0006E81D /* IGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62540DD1979EF0F0006E81D /* IGTimer.swift */; };
+		F62540DF197A08BE0006E81D /* IGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62540DD1979EF0F0006E81D /* IGTimer.swift */; };
 		F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C019749FCC007BA2E9 /* AppDelegate.swift */; };
 		F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */; };
 		F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C519749FCC007BA2E9 /* ViewController.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F62540DD1979EF0F0006E81D /* IGTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGTimer.swift; sourceTree = "<group>"; };
 		F6C500BB19749FCC007BA2E9 /* tiemuhr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiemuhr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C500BF19749FCC007BA2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C500C019749FCC007BA2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 				F6C500CA19749FCD007BA2E9 /* Images.xcassets */,
 				F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */,
 				F6C500BE19749FCC007BA2E9 /* Supporting Files */,
+				F62540DD1979EF0F0006E81D /* IGTimer.swift */,
 			);
 			path = tiemuhr;
 			sourceTree = "<group>";
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					F6C500BA19749FCC007BA2E9 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 9PBBY64MGB;
 					};
 					F6C500CF19749FCD007BA2E9 = {
 						CreatedOnToolsVersion = 6.0;
@@ -212,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */,
+				F62540DE1979EF0F0006E81D /* IGTimer.swift in Sources */,
 				F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */,
 				F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */,
 			);
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C500D719749FCD007BA2E9 /* tiemuhrTests.swift in Sources */,
+				F62540DF197A08BE0006E81D /* IGTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +410,7 @@
 				F6C500DC19749FCD007BA2E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6C500DD19749FCD007BA2E9 /* Build configuration list for PBXNativeTarget "tiemuhrTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +419,7 @@
 				F6C500DF19749FCD007BA2E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

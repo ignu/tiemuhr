@@ -8,26 +8,6 @@
 
 import XCTest
 
-class IGRound {
-    var number:Int
-    var startTime:Int
-
-    init(roundNumber:Int, roundStartTime:Int) {
-        number = roundNumber
-        startTime = roundStartTime
-    }
-}
-
-
-protocol IGClockProtocol {
-    func getTimestamp() -> Int
-}
-
-class IGClock: IGClockProtocol {
-    func getTimestamp() -> Int {
-        return 0;
-    }
-}
 
 class MockClock: IGClockProtocol {
     var stubbedTime:Int
@@ -45,23 +25,6 @@ class MockClock: IGClockProtocol {
     }
 }
 
-class IGTimer {
-    var rounds: NSMutableArray
-    var roundNumber: Int
-    var clock: IGClockProtocol
-
-    init(clock:IGClockProtocol) {
-        rounds = NSMutableArray()
-        self.clock = clock
-        roundNumber = 0
-    }
-
-    func increment() -> Int {
-        var round = IGRound(roundNumber: 0, roundStartTime: clock.getTimestamp())
-        rounds.addObject(round)
-        return 0
-    }
-}
 
 class tiemuhrTests: XCTestCase {
     override func setUp() {
@@ -85,5 +48,19 @@ class tiemuhrTests: XCTestCase {
         timer.increment()
         XCTAssertEqual(timer.rounds.count, 1)
         XCTAssertEqual((timer.rounds[0] as IGRound).startTime, 9)
+    }
+
+    func testCanGetRoundMessage() {
+        var clock =  MockClock()
+        var timer = IGTimer(clock: clock)
+        clock.nextTime(0)
+        timer.increment()
+        clock.nextTime(20)
+        timer.increment()
+
+        XCTAssertEqual(timer.lastRoundMessage, "20 Seconds")
+        clock.nextTime(30)
+        timer.increment()
+        XCTAssertEqual(timer.lastRoundMessage, "10 Seconds")
     }
 }

@@ -10,13 +10,85 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tiemuhrTests/tiemuhrTests.swift"
-            timestampString = "427212046.445356"
+            timestampString = "427429390.386701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "testCanIncrementRounds()"
+            startingLineNumber = "94"
+            endingLineNumber = "94">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tiemuhrTests/tiemuhrTests.swift"
+            timestampString = "427429390.386701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "testCanGetRoundMessage()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tiemuhrTests.tiemuhrTests.testCanGetRoundMessage (tiemuhrTests.tiemuhrTests)() -&gt; ()"
+                  moduleName = "tiemuhrTests"
+                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
+                  timestampString = "427429223.777585"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "466">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tiemuhrTests.tiemuhrTests.(testCanGetRoundMessage (tiemuhrTests.tiemuhrTests) -&gt; () -&gt; ()).(implicit closure #1) with unmangled suffix &quot;_promote0&quot;"
+                  moduleName = "tiemuhrTests"
+                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
+                  timestampString = "427429223.777805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "11">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tiemuhrTests.tiemuhrTests.(testCanGetRoundMessage (tiemuhrTests.tiemuhrTests) -&gt; () -&gt; ()).(implicit closure #2)"
+                  moduleName = "tiemuhrTests"
+                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
+                  timestampString = "427429223.778014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "3">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned () -&gt; (@owned Swift.String) to @callee_owned () -&gt; (@out Swift.String)"
+                  moduleName = "tiemuhrTests"
+                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
+                  timestampString = "427429223.778276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
