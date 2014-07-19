@@ -24,7 +24,7 @@ protocol IGClockProtocol {
 
 class IGClock: IGClockProtocol {
     func getTimestamp() -> Int {
-        return 0;
+        return Int(NSDate().timeIntervalSince1970);
     }
 }
 
@@ -54,8 +54,6 @@ class IGTimer {
     func updateLastRoundMessage() {
         if rounds.count > 0 {
             var timeElapsed = clock.getTimestamp() - getLastRound().startTime
-            println(timeElapsed)
-            println("-------------------------------------------------")
 
             lastRoundMessage = "\(timeElapsed) Seconds"
             println(self.lastRoundMessage)
