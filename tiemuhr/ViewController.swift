@@ -2,8 +2,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var counterLabel: UILabel
-    @IBOutlet var descriptionLabel: UILabel
+    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var averageLabel: UILabel!
     
     var currentCounter = -1
 
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         timer.increment()
         if(timer.lastRoundMessage != "") {
             descriptionLabel.text = timer.lastRoundMessage
+            averageLabel.text = timer.getAverage()
         }
         counterLabel.text = String(currentCounter)
     }

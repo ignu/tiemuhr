@@ -36,7 +36,7 @@ class tiemuhrTests: XCTestCase {
     }
 
     func testHasAnArrayOfRounds() {
-        var clock =  MockClock()        
+        var clock =  MockClock()
         var timer = IGTimer(clock: clock)
         XCTAssertEqual(timer.rounds.count, 0)
     }
@@ -50,17 +50,29 @@ class tiemuhrTests: XCTestCase {
         XCTAssertEqual((timer.rounds[0] as IGRound).startTime, 9)
     }
 
+    func passTime(timer : IGTimer, seconds: Int) {
+        (timer.clock as MockClock).nextTime(seconds)
+        timer.increment()
+    }
+
     func testCanGetRoundMessage() {
         var clock =  MockClock()
         var timer = IGTimer(clock: clock)
-        clock.nextTime(0)
-        timer.increment()
-        clock.nextTime(20)
-        timer.increment()
+        passTime(timer, seconds: 0)  // ignore first round
+        XCTAssertEqual(timer.lastRoundMessage, "")
+        passTime(timer, seconds: 20)
+        XCTAssertEqual(timer.lastRoundMessage, "0:20")
+        passTime(timer, seconds: 89)
+        XCTAssertEqual(timer.lastRoundMessage, "1:09")
+    }
 
-        XCTAssertEqual(timer.lastRoundMessage, "20 Seconds")
-        clock.nextTime(30)
-        timer.increment()
-        XCTAssertEqual(timer.lastRoundMessage, "10 Seconds")
+    func testGetRoundAverage() {
+        var clock =  MockClock()
+        var timer = IGTimer(clock: clock)
+        passTime(timer, seconds: 0)
+        passTime(timer, seconds: 20) // doesnt count
+        passTime(timer, seconds: 40) // 20
+        passTime(timer, seconds: 50) // 10
+        XCTAssertEqual(timer.average, 15)
     }
 }
