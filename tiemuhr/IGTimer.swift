@@ -71,13 +71,15 @@ class IGTimer {
     }
 
     func setLastRoundMessage() {
-        var timeElapsed = clock.getTimestamp() - getLastRound().startTime
-        lastRoundMessage = secondsToMinutesString(timeElapsed)
+        lastRoundMessage = secondsToMinutesString(timeElapsed())
+    }
+    
+    func timeElapsed() -> Int {
+        return clock.getTimestamp() - getLastRound().startTime
     }
 
     func setAverage() {
         var timePassed = self.clock.getTimestamp() - getSecondRound().startTime
-        println(timePassed)
 
         self.average = timePassed / (rounds.count - 1)
     }
