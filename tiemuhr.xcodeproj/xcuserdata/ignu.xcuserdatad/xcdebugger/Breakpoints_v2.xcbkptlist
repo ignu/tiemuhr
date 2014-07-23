@@ -10,85 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tiemuhrTests/tiemuhrTests.swift"
-            timestampString = "427475293.068497"
+            timestampString = "427820769.509514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tiemuhrTests/tiemuhrTests.swift"
-            timestampString = "427475179.853416"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "testCanGetRoundMessage()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tiemuhrTests.tiemuhrTests.testCanGetRoundMessage (tiemuhrTests.tiemuhrTests)() -&gt; ()"
-                  moduleName = "tiemuhrTests"
-                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
-                  timestampString = "427429223.777585"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "466">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tiemuhrTests.tiemuhrTests.(testCanGetRoundMessage (tiemuhrTests.tiemuhrTests) -&gt; () -&gt; ()).(implicit closure #1) with unmangled suffix &quot;_promote0&quot;"
-                  moduleName = "tiemuhrTests"
-                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
-                  timestampString = "427429223.777805"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "11">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tiemuhrTests.tiemuhrTests.(testCanGetRoundMessage (tiemuhrTests.tiemuhrTests) -&gt; () -&gt; ()).(implicit closure #2)"
-                  moduleName = "tiemuhrTests"
-                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
-                  timestampString = "427429223.778014"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "3">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned () -&gt; (@owned Swift.String) to @callee_owned () -&gt; (@out Swift.String)"
-                  moduleName = "tiemuhrTests"
-                  urlString = "file:///Users/ignu/code/tiehmur/tiemuhr/tiemuhrTests/tiemuhrTests.swift"
-                  timestampString = "427429223.778276"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
+            startingLineNumber = "119"
+            endingLineNumber = "119">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

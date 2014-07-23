@@ -65,6 +65,15 @@ class tiemuhrTests: XCTestCase {
         passTime(timer, seconds: 89)
         XCTAssertEqual(timer.lastRoundMessage, "1:09")
     }
+    
+    func testAverageAvailable() {
+        var clock =  MockClock()
+        var timer = IGTimer(clock: clock)
+        passTime(timer, seconds: 0)
+        XCTAssertFalse(timer.averageAvailable())
+        passTime(timer, seconds: 0)
+        XCTAssertTrue(timer.averageAvailable())
+    }
 
     func testGetRoundAverage() {
         var clock =  MockClock()

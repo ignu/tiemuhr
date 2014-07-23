@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     func updateCounter() {
         timer.increment()
-        if(timer.lastRoundMessage != "") {
+        if(timer.averageAvailable()) {
             var interval = NSTimeInterval(timer.average)
 
             descriptionLabel.text = timer.lastRoundMessage
@@ -41,10 +41,11 @@ class ViewController: UIViewController {
     
     
     func updateRound(nsTimer: NSTimer) {
-        if (timer.lastRoundMessage == "") { return }
+        if (!timer.averageAvailable()) { return }
         var elapsed = timer.timeElapsed()
 
-        println("elapsed: \(elapsed) | \(timer.average)")
+        println("--- timer elapsed: \(elapsed) < \(timer.average)")
+        
         if (elapsed > timer.average) {
             counterLabel.textColor = RED
         }

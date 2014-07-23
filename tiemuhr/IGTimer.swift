@@ -91,4 +91,8 @@ class IGTimer {
     func getSecondRound() -> IGRound {
         return (rounds[1] as IGRound)
     }
+    
+    func averageAvailable() -> Bool {
+        return self.lastRoundMessage != ""
+    }
 }
