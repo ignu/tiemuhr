@@ -25,8 +25,30 @@ class ViewController: UIViewController {
         currentCounter++
         updateCounter()
         counterLabel.textColor = WHITE
+        addProgessBar()
     }
+    
+    var progressView: IGProgessView?
+    
+    func addProgessBar() {
+        
+        if(!timer.averageAvailable()) { return }
+        progressView?.removeFromSuperview()
+        
+        var rect = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: 1)
+        progressView = IGProgessView(frame: rect)
+        view.addSubview(progressView)
+        view.sendSubviewToBack(progressView)
 
+        var theProgressView = (progressView as IGProgessView)
+        var interval = NSTimeInterval(timer.average)
+        UIView.animateWithDuration(interval, animations: {
+                theProgressView.frame.size.height = self.view.frame.height
+            }, completion:  {
+                (value: Bool) in
+                theProgressView.backgroundColor = UIColor.redColor()
+            })
+    }
     
     func updateCounter() {
         timer.increment()
@@ -47,7 +69,8 @@ class ViewController: UIViewController {
         println("--- timer elapsed: \(elapsed) < \(timer.average)")
         
         if (elapsed > timer.average) {
-            counterLabel.textColor = RED
+            println("You are late!")
+            //counterLabel.textColor = RED
         }
     }
     

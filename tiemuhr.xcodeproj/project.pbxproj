@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F62540DE1979EF0F0006E81D /* IGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62540DD1979EF0F0006E81D /* IGTimer.swift */; };
 		F62540DF197A08BE0006E81D /* IGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62540DD1979EF0F0006E81D /* IGTimer.swift */; };
+		F6C1596B1984443E00EDA323 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C1596A1984443E00EDA323 /* ProgressView.swift */; };
 		F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C019749FCC007BA2E9 /* AppDelegate.swift */; };
 		F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C219749FCC007BA2E9 /* tiemuhr.xcdatamodeld */; };
 		F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C500C519749FCC007BA2E9 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		F62540DD1979EF0F0006E81D /* IGTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGTimer.swift; sourceTree = "<group>"; };
+		F6C1596A1984443E00EDA323 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		F6C500BB19749FCC007BA2E9 /* tiemuhr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiemuhr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C500BF19749FCC007BA2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C500C019749FCC007BA2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				F6C500C719749FCD007BA2E9 /* Main.storyboard */,
 				F6C500BE19749FCC007BA2E9 /* Supporting Files */,
 				F62540DD1979EF0F0006E81D /* IGTimer.swift */,
+				F6C1596A1984443E00EDA323 /* ProgressView.swift */,
 			);
 			path = tiemuhr;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				F6C500C619749FCC007BA2E9 /* ViewController.swift in Sources */,
 				F62540DE1979EF0F0006E81D /* IGTimer.swift in Sources */,
+				F6C1596B1984443E00EDA323 /* ProgressView.swift in Sources */,
 				F6C500C419749FCC007BA2E9 /* tiemuhr.xcdatamodeld in Sources */,
 				F6C500C119749FCC007BA2E9 /* AppDelegate.swift in Sources */,
 			);
