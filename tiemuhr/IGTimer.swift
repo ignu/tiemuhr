@@ -93,6 +93,6 @@ class IGTimer {
     }
     
     func averageAvailable() -> Bool {
-        return self.lastRoundMessage != ""
+        return rounds.count > 1
     }
 }
