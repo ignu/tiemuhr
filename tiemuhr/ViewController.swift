@@ -46,12 +46,14 @@ class ViewController: UIViewController {
 
         var theProgressView = (progressView!)
         var interval = NSTimeInterval(timer.average)
-        UIView.animateWithDuration(interval, animations: {
-                theProgressView.frame.size.height = self.view.frame.height
+
+        UIView.animateWithDuration(interval, delay: 0,
+            options: .AllowUserInteraction, animations: {
+            theProgressView.frame.size.height = self.view.frame.height
             }, completion:  {
                 (value: Bool) in
                 theProgressView.backgroundColor = UIColor.redColor()
-            })
+        })
     }
     
     func updateCounter() {
