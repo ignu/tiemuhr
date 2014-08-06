@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     var nsTimer: NSTimer?
     let timer = IGTimer(clock: IGClock())
+    var progressView: IGProgessView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +25,26 @@ class ViewController: UIViewController {
     override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
         currentCounter++
         updateCounter()
-        counterLabel.textColor = WHITE
         addProgessBar()
+        counterLabel.textColor = WHITE
     }
     
-    var progressView: IGProgessView?
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     func addProgessBar() {
-        
+        view.becomeFirstResponder()
+
         if(!timer.averageAvailable()) { return }
         progressView?.removeFromSuperview()
         
         var rect = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: 1)
         progressView = IGProgessView(frame: rect)
-        view.addSubview(progressView)
-        view.sendSubviewToBack(progressView)
+        view.addSubview(progressView!)
+        view.sendSubviewToBack(progressView!)
 
-        var theProgressView = (progressView as IGProgessView)
+        var theProgressView = (progressView!)
         var interval = NSTimeInterval(timer.average)
         UIView.animateWithDuration(interval, animations: {
                 theProgressView.frame.size.height = self.view.frame.height
@@ -61,7 +65,6 @@ class ViewController: UIViewController {
         counterLabel.text = String(currentCounter)
     }
     
-    
     func updateRound(nsTimer: NSTimer) {
         if (!timer.averageAvailable()) { return }
         var elapsed = timer.timeElapsed()
@@ -70,13 +73,7 @@ class ViewController: UIViewController {
         
         if (elapsed > timer.average) {
             println("You are late!")
-            //counterLabel.textColor = RED
         }
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 
